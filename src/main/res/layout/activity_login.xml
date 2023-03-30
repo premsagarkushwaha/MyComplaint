@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".login_activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="My Complaint"
+        android:textColor="#103D78"
+        android:textSize="32.5sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3sp"
+        android:fontFamily="@font/roboto"
+        android:gravity="center"
+        android:text="Login"
+        android:textColor="#56ACE6"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/login_number"
+        android:layout_marginTop="120dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/border_right"
+        android:ems="10"
+        android:hint="Enter Your Registered Mobile Number"
+        android:padding="15dp"
+        android:maxLength="10"
+        android:textSize="15sp"/>
+
+
+
+
+    <Button
+        android:id="@+id/login_btn"
+        android:text="Get OTP"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/white"
+        android:layout_width="170dp"
+        android:visibility="visible"
+        android:background="@drawable/round_btn"
+        android:layout_height="40dp"/>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:id="@+id/loginpb"
+        android:visibility="gone"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/sendotptxt"
+        android:visibility="gone"
+        android:text="Sending OTP..."
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="45dp">
+
+        <TextView
+            android:id="@+id/textview1"
+            android:text="Don't have an account?"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/registerNow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/registerNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="@id/textview1"
+            android:textColor="#103C78"
+            android:text="sign up"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</LinearLayout>

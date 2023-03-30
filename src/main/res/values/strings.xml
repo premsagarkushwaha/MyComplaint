@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Complaint</string>
+    <string name="sign_up" />
+    <string name="login" />
+    <string name="password" />
+    <string name="enter_your_email" />
+    <string name="my_comaplaint" />
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

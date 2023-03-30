@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:gravity="center"
+    android:background="@drawable/backgroundcolor"
+    tools:context=".user_admin_activity">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="My Complaint"
+        android:textColor="#103D78"
+        android:textSize="33sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/metrophobic"
+        android:gravity="center"
+        android:letterSpacing="0.11"
+        android:text="make your job easy"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_user"
+        android:text="user"
+        android:layout_marginTop="70dp"
+        android:textColor="@color/white"
+        android:layout_width="250dp"
+        android:background="@drawable/round_btn"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:id="@+id/btn_admin"
+        android:text="admin"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/white"
+        android:layout_width="250dp"
+        android:background="@drawable/round_btn"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

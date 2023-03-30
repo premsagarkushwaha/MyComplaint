@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".AccountSetup">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="My Complaint"
+        android:textColor="#103D78"
+        android:textSize="32.5sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:layout_marginTop="3sp"
+        android:gravity="center"
+        android:text="Account Setup"
+        android:textColor="#56ACE6"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/as_name"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_right"
+        android:ems="10"
+        android:hint="Enter your Full Name"
+        android:padding="15dp"
+        android:textSize="15sp"/>
+
+
+    <EditText
+        android:id="@+id/as_email"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_right"
+        android:ems="10"
+        android:hint="Enter Your Email"
+        android:padding="15dp"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/as_registerno"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_right"
+        android:ems="10"
+        android:hint="Registration Number"
+        android:padding="15dp"
+        android:textSize="15sp"/>
+
+
+
+    <Button
+        android:id="@+id/btn_as"
+        android:text="Continue"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:layout_width="170dp"
+        android:background="@drawable/round_btn"
+        android:layout_height="40dp"/>
+
+
+
+
+
+
+</LinearLayout>

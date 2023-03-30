@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".closingComplaint">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:background="#A2C5FD"
+        android:layout_height="45dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Details"
+            android:textSize="18dp"
+            android:textColor="@color/black"/>
+    </Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/borderbox"
+                android:padding="5dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:id="@+id/content"
+                    android:text="Cotent"
+                    android:layout_height="150dp"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/response"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/borderbox"
+                android:gravity="start"
+
+                android:hint="Your Response"
+                android:layout_marginBottom="40dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="15dp"
+                android:textSize="17dp" />
+
+
+
+
+            <Button
+                android:id="@+id/btn_close"
+                android:layout_margin="5dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="12dp"
+                android:layout_width="200dp"
+                android:text="close complaint"
+                android:background="@drawable/newroundbutton"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
